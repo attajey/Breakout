@@ -13,7 +13,7 @@ public class Ball : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
 
-        float y = Random.value < 0.5f ? -1.0f : 1.0f;
+        float y = 1.0f;//Random.value < 0.5f ? -1.0f : 1.0f;
         float x = Random.value < 0.5f ? Random.Range(-1.0f, 0.5f) : 
                                         Random.Range(0.5f, 1.0f);
         Vector2 newVelocity = new Vector2(x, y);
